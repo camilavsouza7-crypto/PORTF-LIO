@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LINGUAGENS</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ffffff;
+    font-family:'Poppins', sans-serif;
+    padding:40px;
+    color:#5f1834;
+}
+
+
+
+.container{
+    max-width:1350px;
+    
+    margin:auto;
+    background:#ffd8e1;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(112, 34, 64, 0.08);
+    border:1px solid #efd5df;
+}
+
+
+
+.topo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:35px 50px;
+    border-bottom:1px solid #efcfd9;
+    position:relative;
+}
+
+.topo::before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    width:18px;
+    height:100%;
+    background:linear-gradient(to bottom,#8d274d,#922c50);
+}
+
+
+
+.info{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+
+
+.circulo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#f7d9e3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 8px 20px rgba(120,40,70,0.12);
+    border:2px solid #c44d76;
+}
+
+.circulo span{
+    font-size:55px;
+    color:#8d274d;
+}
+
+
+
+.textos h1{
+    font-family:'Cinzel', serif;
+    font-size:65px;
+    color:#7a2328;
+    letter-spacing:2px;
+}
+
+.textos p{
+    font-size:18px;
+    color:#420c0c;
+    margin-top:8px;
+}
+
+
+.flor{
+    font-size:75px;
+    color:#cc6b90;
+    opacity:0.8;
+}
+
+
+.linha{
+    width:100%;
+    height:2px;
+    background:#ecc8d5;
+    margin:35px 0;
+    position:relative;
+}
+
+.linha::after{
+    content:'◆';
+    position:absolute;
+    left:50%;
+    top:-12px;
+    transform:translateX(-50%);
+    color:#b34f74;
+    font-size:18px;
+}
+
+
+
+.eixo{
+    padding:30px;
+}
+
+.titulo-eixo{
+    display:inline-block;
+    background:linear-gradient(90deg,#ffffff);
+    color:rgb(17, 0, 0);
+    padding:12px 35px;
+    border-radius:30px;
+    font-weight:600;
+    font-size:23px;
+    margin-bottom:30px;
+    box-shadow:0 6px 15px rgba(141,39,77,0.2);
+       font-family:'Times New Roman', Times, serif
+}
+
+
+.cards{
+    display:flex;
+    gap:28px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:20px;
+    border:1px solid #efd2dc;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 8px 18px rgba(0,0,0,0.05);
+
+    display:flex;
+    flex-direction:column;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+.data{
+    text-align:center;
+    padding:12px;
+    font-size:20px;
+    font-family:'Times New Roman', Times, serif;
+    color:#2b0000;
+    background:#fff;
+}
+
+
+@media(max-width:1200px){
+
+    .cards{
+        justify-content:center;
+    }
+
+}
+
+@media(max-width:800px){
+
+    .topo{
+        flex-direction:column;
+        gap:25px;
+        text-align:center;
+    }
+
+    .info{
+        flex-direction:column;
+    }
+
+    .textos h1{
+        font-size:42px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <div class="topo">
+
+        <div class="info">
+
+            <div class="circulo">
+             <span>✒️</span>
+            </div>
+
+            <div class="textos">
+                <h1>LINGUAGENS</h1>
+                <p>Rute Almondes e Kercia Rimaelle</p>
+            </div>
+
+        </div>
+
+    
+
+    </div>
+
+    
+    <div class="eixo">
+
+        <div class="linha"></div>
+
+        <div class="titulo-eixo">
+            📁 EIXO 1
+        </div>
+
+        <div class="cards">
+            
+            <div class="card">
+                <img src="./img/12.png" alt="">
+                <div class="data">26/01/2026</div>
+
+            </div>
+
+
+              <div class="card">
+                <img src="./img/ling8.png" alt="">
+                  <div class="data">31/01/2026</div>
+            </div>
+
+
+               
+            <div class="card">
+                <img src="./img/ling.png" alt="">
+                  <div class="data">10/02/2026</div>
+            </div>
+
+            <div class="card">
+                <img src="./img/14.png" alt="">
+                 <div class="data">09/03/2026</div>
+            
+            </div>
+         
+          
+
+
+        </div>
+
+    </div>
+
+
+    <div class="eixo">
+
+        <div class="linha"></div>
+
+        <div class="titulo-eixo">
+            📁 EIXO 2
+        </div>
+
+        <div class="cards">
+
+    
+            <div class="card">
+                <img src="./img/16.png" alt="">
+                 <div class="data">13/04/2026</div>
+            </div>
+
+            <div class="card">
+                <img src="./img/17.png" alt="">
+                 <div class="data">20/04/2026</div>
+            </div>
+ <div class="card">
+                <img src="./img/18.png" alt="">
+                 <div class="data">25/04/2026</div>
+            </div>
+   <div class="card">
+                <img src="./img/atividade lista (1).png" alt="">
+            <div class="data">06/05/2026</div>
+            </div>
+    
+
+             <div class="card">
+                <img src="./img/lin2.png" alt="">
+                 <div class="data">04/06/2026</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PPE</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Inter', sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      background:#f8dfe8;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:40px 20px;
+      color:#5e4b52;
+    }
+
+    .container{
+      width:100%;
+      max-width:1200px;
+    }
+
+    .titulo{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .titulo h1{
+      font-size:4rem;
+      font-weight:700;
+      color:#8f5f72;
+      letter-spacing:2px;
+      margin-bottom:10px;
+    }
+
+    .titulo p{
+      color:#9d7d88;
+      font-size:1rem;
+      font-weight:400;
+    }
+
+    .grade{
+      display:grid;
+      grid-template-columns: 180px repeat(5, 1fr);
+      gap:18px;
+    }
+
+    .card{
+      background:#fff5f8;
+      border-radius:24px;
+      padding:22px 18px;
+      min-height:110px;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+
+      font-size:0.95rem;
+      font-weight:500;
+
+      box-shadow:
+      0 4px 10px rgba(0,0,0,0.03),
+      inset 0 1px 0 rgba(255,255,255,0.7);
+
+      transition:0.25s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-4px);
+      background:#fff;
+    }
+
+    .header{
+      background:#efc8d5;
+      color:#7c5664;
+      font-size:1.1rem;
+      font-weight:600;
+    }
+
+    .time{
+      background:#e9c6d2;
+      color:#7b5d67;
+      font-weight:600;
+    }
+
+    .study{
+      background:#fff8fa;
+    }
+
+    .school{
+      background:#ffeef3;
+    }
+
+    .course{
+      background:#fff3f7;
+    }
+
+    .logos-lateral{
+    position:absolute;
+
+    top:20px;
+    right:30px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:12px;
+
+    z-index:10;
+}
+
+.logos-lateral img{
+    width:140px;
+
+    background:rgba(255,255,255,0.75);
+
+    padding:10px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    transition:.3s;
+}
+.logos-lateral{
+    position:absolute;
+
+    top:10px;
+    right:10px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:8px;
+
+    z-index:100;
+}
+
+.logos-lateral img{
+    width:95px;
+
+    background:rgba(255,255,255,0.75);
+
+    padding:6px;
+
+    border-radius:10px;
+
+    box-shadow:
+    0 4px 12px rgba(0,0,0,.08);
+}
+.logos-lateral img:hover{
+    transform:translateY(-3px);
+}
+    @media(max-width:900px){
+
+      .grade{
+        grid-template-columns:1fr;
+      }
+
+      .titulo h1{
+        font-size:2.8rem;
+      }
+
+      .card{
+        min-height:85px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="titulo">
+      <h1>PPE</h1>
+      <p>Planejamento semanal de estudos</p>
+    </div>
+
+    <div class="grade">
+
+   
+      <div class="card header">Horário</div>
+      <div class="card header">Segunda</div>
+      <div class="card header">Terça</div>
+      <div class="card header">Quarta</div>
+      <div class="card header">Quinta</div>
+      <div class="card header">Sexta</div>
+
+      <div class="card time">08:00 às 10:00</div>
+
+      <div class="card study">Estudo e revisão</div>
+      <div class="card study">Estudo e revisão</div>
+      <div class="card study">Estudo e revisão</div>
+      <div class="card study">Estudo e revisão</div>
+      <div class="card study">Estudo e revisão</div>
+
+    
+      <div class="card time">13:00 às 18:20</div>
+
+      <div class="card school">SESI e SENAI</div>
+      <div class="card school">SESI e SENAI</div>
+      <div class="card school">SESI e SENAI</div>
+      <div class="card school">SESI e SENAI</div>
+      <div class="card school">SENAI</div>
+
+      
+      <div class="card time">18:20 às 21:35</div>
+
+      <div class="card course">Curso</div>
+      <div class="card course">Aulão</div>
+      <div class="card course">Aulão</div>
+      <div class="card course">Aulão</div>
+      <div class="card study">Estudo</div>
+
+    </div>
+
+  </div>
+
+</body>
+<div class="logos-lateral">
+
+    <img src="./img/logo senai.png" alt="Senai">
+
+    <img src="./img/logo.png" alt="Sesi">
+
+</div>
+</html>

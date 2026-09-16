@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Objetivos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#dfb7c5;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Poppins', sans-serif;
+    overflow:hidden;
+    position:relative;
+    padding:40px;
+}
+
+
+
+
+.container{
+    width:1200px;
+    background:#f8eef1;
+    border-radius:40px;
+    padding:50px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.05);
+    position:relative;
+    z-index:2;
+}
+
+/* TÍTULO */
+
+.title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.title h1{
+    font-size:80px;
+    color:#47051e;
+    font-family:'Cormorant Garamond', serif;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.line{
+    width:260px;
+    height:1px;
+    background:#ddb2c0;
+    margin:10px auto 0;
+    position:relative;
+}
+
+.line::after{
+    content:"✦";
+    position:absolute;
+    top:-13px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#f8eef1;
+    padding:0 10px;
+    color:#cb8aa0;
+    font-size:18px;
+}
+
+
+.content{
+    width:100%;
+    background:#f5ebee;
+    border:1px solid #ecd0d9;
+    border-radius:35px;
+    padding:45px;
+}
+
+.left{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+
+.card{
+    background:#fff;
+    border-radius:28px;
+    padding:30px;
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+    box-shadow:0 8px 20px rgba(0,0,0,0.03);
+    width:100%;
+}
+
+.icon{
+    min-width:50px;
+    height:50px;
+    background:#f8e6ec;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#bc7790;
+    font-size:20px;
+}
+
+.card p{
+    color:#6f5260;
+    font-size:20px;
+    line-height:1.8;
+    font-weight:400;
+}
+
+
+
+.logos-lateral{
+    position:absolute;
+
+    top:20px;
+    right:30px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:12px;
+
+    z-index:10;
+}
+
+.logos-lateral img{
+    width:140px;
+
+    background:rgba(255,255,255,0.75);
+
+    padding:10px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    transition:.3s;
+}
+.logos-lateral{
+    position:absolute;
+
+    top:10px;
+    right:10px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:8px;
+
+    z-index:100;
+}
+
+.logos-lateral img{
+    width:95px;
+
+    background:rgba(255,255,255,0.75);
+
+    padding:6px;
+
+    border-radius:10px;
+
+    box-shadow:
+    0 4px 12px rgba(0,0,0,.08);
+}
+.logos-lateral img:hover{
+    transform:translateY(-3px);
+}
+@media(max-width:1100px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        width:100%;
+        padding:30px;
+    }
+
+    .content{
+        padding:25px;
+    }
+
+    .title h1{
+        font-size:55px;
+    }
+
+    .card{
+        padding:25px;
+    }
+
+    .card p{
+        font-size:18px;
+    }
+}
+
+@media(max-width:700px){
+
+    .title h1{
+        font-size:42px;
+    }
+
+    .card{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .card p{
+        font-size:16px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="circle1"></div>
+<div class="circle2"></div>
+
+<div class="container">
+
+    <div class="title">
+        <h1>OBJETIVOS</h1>
+        <div class="line"></div>
+    </div>
+
+    <div class="content">
+
+        <div class="left">
+
+            <div class="card">
+
+                <div class="icon">✦</div>
+
+                <p>
+                    Registrar meus conhecimentos e habilidades de forma prática pelas quatro áreas de conhecimento durante os eixos.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icon">✦</div>
+
+                <p>
+                    Superar minhas barreiras, me tornando cada vez melhor, para assim expor qualificação para o mercado de trabalho, me tornando uma profissional capacitada.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+<div class="logos-lateral">
+
+    <img src="./img/logo senai.png" alt="Senai">
+
+    <img src="./img/logo.png" alt="Sesi">
+
+</div>
+</html>

@@ -1,0 +1,277 @@
+.anexos {
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 20px;
+    background: #fff5f7;
+}
+/* TÍTULO */
+
+.anexos h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    color: #8c1f48;
+    margin-bottom: 15px;
+}
+
+
+/* DESCRIÇÃO */
+
+.descricao {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 45px;
+    color: #66545c;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* CARDS DOS EVENTOS */
+.cards {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 320px);
+    justify-content: center;
+    
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(100, 30, 55, 0.12);
+
+    transition: 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(100, 30, 55, 0.20);
+}
+
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+
+    transition: 0.4s;
+}
+
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+
+.card-texto {
+    padding: 18px 20px;
+    background: #fffafa;
+}
+
+
+.card-texto h3 {
+    color: #8c1f48;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+.card-texto p {
+    color: #806c74;
+    font-size: 13px;
+}
+
+
+/* LINHA SEPARADORA */
+
+.linha-separadora {
+    width: 100%;
+    max-width: 700px;
+    margin: 60px auto 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.linha-separadora span:first-child,
+.linha-separadora span:last-child {
+    width: 100%;
+    height: 1px;
+    background: #e5aebc;
+}
+
+
+.coracao {
+    color: #8c1f48;
+    font-size: 16px;
+}
+
+
+/* ÁREA DOS CARDS FINAIS */
+
+.cards-finais {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* CARD FINAL */
+
+.card-final {
+    background: #ffffff;
+
+    border: 1px solid #efd8df;
+    border-radius: 18px;
+
+    padding: 30px 25px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(100, 30, 55, 0.10);
+
+    transition: 0.3s ease;
+}
+
+
+.card-final:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 30px rgba(100, 30, 55, 0.16);
+}
+
+
+/* ÍCONES */
+
+.icone-final {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f9e1e7;
+    border-radius: 50%;
+
+    font-size: 28px;
+}
+
+
+/* TÍTULO DOS CARDS */
+
+.card-final h2 {
+    margin: 0;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+
+    color: #8c1f48;
+}
+
+
+/* PEQUENO TRAÇO */
+
+.traco {
+    width: 40px;
+    height: 2px;
+
+    background: #e5aebc;
+
+    margin: 18px auto;
+}
+
+
+/* TEXTO */
+
+.card-final p {
+    margin: 0 0 25px;
+
+    color: #705c65;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    min-height: 95px;
+}
+
+
+/* BOTÕES */
+
+.card-final a {
+    display: inline-block;
+
+    padding: 11px 22px;
+
+    background: #8c1f48;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+
+.card-final a:hover {
+    background: #a92d5b;
+    transform: translateY(-2px);
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards-finais {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .anexos {
+        padding: 40px 20px;
+    }
+
+    .anexos h1 {
+        font-size: 42px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}

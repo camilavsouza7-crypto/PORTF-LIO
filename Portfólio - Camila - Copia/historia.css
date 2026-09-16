@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(
+        135deg,
+        #f7d9e2,
+        #f2cdd8,
+        #efd4dc
+    );
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+    font-family: Georgia, serif;
+}
+
+.container{
+    width:100%;
+    max-width:1000px;
+    margin:auto;
+}
+
+/* TÍTULO */
+.titulo{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.titulo h1{
+    font-size:76px;
+    color:#8c6274;
+    margin-bottom:5px;
+}
+
+.titulo p{
+    font-size:16px;
+    color:#b08a99;
+}
+
+/* TIMBRADO */
+.timbrado{
+    display:flex;
+    justify-content:center;
+    margin-bottom:15px;
+}
+
+.timbrado img{
+    width:950px;
+    max-width:100%;
+}
+
+/* FOLHA */
+.folha{
+    width:800px;
+    max-width:100%;
+    margin:auto;
+    background:rgba(255,255,255,.65);
+    padding:50px;
+    border-radius:8px;
+}
+
+/* TEXTO */
+.folha p{
+    font-size:22px;
+    line-height:1.8;
+    color:#6b4c59;
+    text-align:justify;
+    margin-bottom:25px;
+}

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDF6F6; 
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 50px;
+}
+
+
+.foto-container {
+    flex-shrink: 0;
+}
+
+.moldura-arco {
+    border: 2px solid #7D1F49; 
+    padding: 12px;
+    border-radius: 160px 160px 20px 20px; 
+    box-shadow: 0 15px 35px rgba(125, 31, 73, 0.08);
+    display: inline-block;
+}
+
+.moldura-arco img {
+    width: 260px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 145px 145px 12px 12px; 
+    display: block;
+}
+
+.conteudo-container {
+    flex: 1;
+    max-width: 600px;
+}
+
+.subtitulo {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #D3658B;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: #7D1F49; 
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.texto-descricao {
+    color: #5A5A5A;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+.destaque {
+    color: #7D1F49;
+    font-weight: 600;
+}
+
+.divisor {
+    border: 0;
+    height: 1px;
+    background-color: #F5D6E1;
+    margin: 30px 0;
+}
+
+
+.cards-flex {
+    display: flex;
+    gap: 15px;
+}
+
+.card-info {
+    flex: 1;
+    background-color: #FFFFFF;
+    border: 1px solid #F5D6E1;
+    border-radius: 12px;
+    padding: 20px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(125, 31, 73, 0.02);
+}
+
+.card-info i {
+    font-size: 26px;
+    color: #D3658B;
+    margin-bottom: 4px;
+}
+
+.card-dado {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2C2C2C;
+}
+
+.card-rotulo {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #D3658B;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.avatar-container {
+    flex-shrink: 0;
+}
+
+.avatar-container img {
+    height: 380px;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .container-sobre {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    .cards-flex {
+        justify-content: center;
+    }
+    .moldura-arco {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .cards-flex {
+        flex-direction: column;
+    }
+}

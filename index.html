@@ -1,86 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Meu Portfólio</title>
+    <title>Login</title>
 
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="center">
 
-        <nav>
+        <h1>LOGIN</h1>
 
-            <a class="ativo">✦ Sobre mim</a>
+        <form onsubmit="logar(); return false;">
+
+         
+            <div class="text_field">
+
+                <input
+                    type="text"
+                    id="login"
+                    required
+                >
+
+                <label>Usuário</label>
+
+            </div>
+
+
+        
+            <div class="text_field">
+
+                <input
+                    type="password"
+                    id="senha"
+                    required
+                >
+
+                <label>Senha</label>
+
+            </div>
+
+
             
-            <a href="objetivos.html">Objetivos</a>
-            <a href="./contact.html">PPE</a>
-            <a href="./histor.html">História de Vida</a>
-            <a href="./project.html">Projeto de Vida</a>
-            <a href="linguagens.html">Linguagens</a>
-            <a href="humanas.html">Humanas</a>
-            <a href="natureza.html">Natureza</a>
-            <a href="matematica.html">Matemática</a>
-            <a href="senai.html">Senai</a>
+            <div class="pass">
+                Esqueceu a senha?
+            </div>
 
-        </nav>
 
-        <section class="hero">
+            <div class="botoes">
 
-            <div class="texto">
+                <input
+                    type="submit"
+                    value="Conectar"
+                    class="btn-conectar"
+                >
 
-                <h2>Meu</h2>
-
-                <h1>PORTFÓLIO</h1>
-
-                <div class="linha">
-                    <span></span>
-                    ✦
-                    <span></span>
-                </div>
-
-                <p>
-                    “Cada passo da minha jornada
-                    me trouxe até aqui.”
-                </p>
-<a href="eventos.html" class="btn-eventos">
-    Conheça sobre mim 
-</a>
-
-                <div class="cards">
-
-                   
-
-                </div>
+                <input
+                    type="button"
+                    value="Cancelar"
+                    class="btn-cancelar"
+                    onclick="cancelar()"
+                >
 
             </div>
 
-            <div class="foto-area">
 
-            <div class="foto-card">
-    <a href="perfil.html">
-        <img src="./img/Design sem nome (1).png" alt="Camila Vitória">
-    </a>
-</div>
+         
+            <div class="signup_link">
+
+                <a href="cadastro.html">
+                    Não é membro? Cadastre-se!
+                </a>
 
             </div>
 
-        </section>
-
-        <footer>
-
-           Orientadores: Cleiton Jericó - Regiane Leal / © 2026 Camila Vitória • Todos os direitos reservados
-
-        </footer>
+        </form>
 
     </div>
+
+
+    <script src="login.js"></script>
 
 </body>
 

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PPE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #f8dfe8;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px 70px;
+      color: #5e4b52;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    /* TÍTULO */
+
+    .titulo {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .titulo h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      color: #8f5f72;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .titulo p {
+      color: #9d7d88;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    /* CURRÍCULO */
+
+    .curriculo-area {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .curriculo-card {
+      width: 650px;
+      background: #fff5f8;
+      border-radius: 22px;
+      padding: 15px;
+      box-shadow:
+        0 10px 30px rgba(100, 50, 70, 0.12),
+        0 2px 6px rgba(0, 0, 0, 0.04);
+
+      transition: 0.3s ease;
+    }
+
+    .curriculo-card:hover {
+      transform: translateY(-4px);
+      box-shadow:
+        0 15px 35px rgba(100, 50, 70, 0.16);
+    }
+
+    .curriculo-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      object-fit: contain;
+    }
+
+    /* LOGOS */
+
+    .logos-lateral {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 8px;
+
+      z-index: 100;
+    }
+
+    .logos-lateral img {
+      width: 95px;
+
+      background: rgba(255, 255, 255, 0.75);
+
+      padding: 6px;
+
+      border-radius: 10px;
+
+      box-shadow:
+        0 4px 12px rgba(0, 0, 0, .08);
+
+      transition: .3s;
+    }
+
+    .logos-lateral img:hover {
+      transform: translateY(-3px);
+    }
+
+    /* RESPONSIVO */
+
+    @media(max-width: 900px) {
+
+      .titulo h1 {
+        font-size: 2.8rem;
+      }
+
+      .curriculo-card {
+        width: 80%;
+      }
+
+    }
+
+    @media(max-width: 600px) {
+
+      body {
+        padding: 25px 15px 50px;
+      }
+
+      .titulo {
+        margin-bottom: 25px;
+      }
+
+      .titulo h1 {
+        font-size: 2.3rem;
+      }
+
+      .curriculo-card {
+        width: 100%;
+        padding: 10px;
+      }
+
+      .logos-lateral {
+        top: 8px;
+        right: 8px;
+      }
+
+      .logos-lateral img {
+        width: 75px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- TÍTULO -->
+
+    <div class="titulo">
+      <h1>CURRÍCULO</h1>
+    </div>
+
+
+    <!-- CURRÍCULO -->
+
+    <div class="curriculo-area">
+
+      <div class="curriculo-card">
+
+        <img src="./img/currículo.png" alt="Currículo">
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- LOGOS -->
+
+  <div class="logos-lateral">
+
+    <img src="./img/logo senai.png" alt="Senai">
+
+    <img src="./img/logo.png" alt="Sesi">
+
+  </div>
+
+</body>
+
+</html>

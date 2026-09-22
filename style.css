@@ -286,3 +286,42 @@ footer{
     text-decoration:none;
     border-radius:30px;
 }
+/* =========================================
+   TRÊS BARRAS DO MENU
+========================================= */
+
+.menu-btn {
+    position: fixed;
+
+    top: 118px;
+    left: 43px;
+
+    width: 24px;
+    height: 24px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    background: transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+
+    cursor: pointer;
+
+    z-index: 9999;
+}
+
+.menu-btn span {
+    display: block;
+
+    width: 21px;
+    height: 3px;
+
+    background: #8b234f;
+
+    border-radius: 3px;
+}
